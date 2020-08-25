@@ -1,0 +1,62 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "Header Header Header Header" "Nav Articles Articles Ads" "Nav Articles Articles Ads" "Footer Footer Footer Footer";
+  }
+  
+  .Nav { grid-area: Nav; }
+  
+  .Ads { grid-area: Ads; }
+  
+  .Articles { grid-area: Articles; }
+  
+  .Footer { 
+      grid-area: Footer;
+      height: 22px;
+      width: 22px;
+      grid-column: 5/4;
+
+}
+
+.footer img{
+    width: 50px;
+}
+
+  .Header { 
+      grid-area: Header; 
+      text-align: center;
+      height: 50px;
+      
+    }
+
+  .goods{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: 100px 150px 150px;
+    grid-column-gap: 10rem;
+    grid-row-gap: 20px;
+    justify-content: center;
+
+}
+h1{
+    /* grid-column: 1/4; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
+.cards{
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    grid-column: 3/4;
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
